@@ -1,0 +1,40 @@
+Pra que serve um objeto?
+objetos servem paraa organizar o codigo em pequenas partes reutilizáveis.
+Digamos que vc precisa criar uma variavel pessoa, e um pouco mais a frente vc precisa criar outra var pessoa para um outro escopo de codigo, ao inves de ter de criar uma  pessoa2, por exemplo, é nesse momento que vc vai utilizar objetos. Vc criaria um objeto pessoa e adicionaria ao objeto as propriedades e metodos que vc precisaria sempre q criasse um variavel nova com a mesma intencao. 
+
+objeto pessoa: 
+
+let pessoa = {
+    nome: fulano,
+    idade: 20, 
+    corDePele: pardo,
+    altura: 70
+}
+
+Um objeto é criado inicializando uma variavel que recebe um conteudo entre chaves; este conteudo sempre terá uma chave: valor, em que a chave pode ser propriedades ou metodos.
+Para acessar as propriedades é utilizado o Dot Notation Get, como é conhecido a forma de acessar utilizando ponto:
+
+pessoa.idade
+objeto.propriedade/metodo
+
+o objeto pode ter propriedades, como acima e metodos, como o que segue:
+
+let pessoa = {
+    nome: fulano,
+    idade: 20, 
+    corDePele: pardo,
+    altura: 70,
+    bebeAgua(quantidade) {
+        return `bebi ${quantidade}ml`
+    },
+    come(){
+        return true
+    },
+}
+
+acessando metodos:
+
+pessoa.come -> dessa maneira vc acessa o metodo come de pessoa
+
+pessoa.come() -> e com essa o console executa a função come. Teste no console do navegador. 
+
