@@ -1,0 +1,9 @@
+É um grupo de valores geralmente relacionados. Servem para guardarmos diferentes valores em uma unica variavel.
+a array é inicializada com uma estrutura similar a como se iniciam variaveis: uma palavra reservada (let, var, const) + nome da array + operador de atribuicao (=) + []:
+
+var videoGames = ['Switch', 'PS4', 'Xbox'];
+
+videoGames[0] // Switch
+videoGames[2] // Xbox
+
+Acesse  um elemento da array utilizando [n]
