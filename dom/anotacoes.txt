@@ -1,0 +1,22 @@
+// Document Object Model - DOM
+
+É uma interface q representa documentos HTML e XML atraves de objetos. Com ela é possível manipular a estrutura, estilo e conteúdo destes documentos.
+
+Ao inspecionar elemento com o Chrome, vc está vendo a representação oficial do DOM.
+
+// .window e .document
+
+são os objetos principais do DOM, boa parte da manipulação é feita através dos seus métodos e propriedades.
+
+window.alert('isso é um alerta')
+alert('isso tbm é um alerta')
+
+document.querySelector('h1')
+document.body
+
+window é o obejeto global, por isso nao precisamos chamar ele na frente dos seus metodos e propriedades.
+
+// Node
+
+Toda tag html é representada pelo objeto Element e por isso herda os seus metodos e propriedades. Element é um tipo de objeto node.
+
