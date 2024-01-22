@@ -113,3 +113,45 @@ body{
     border-right: 4px solid #faf6ed;
 }
 
+.animais-descricao {
+    grid-column: 3;
+}
+
+.animais-descricao section{
+    margin-bottom: 3rem;
+}
+
+.faq-lista {
+    grid-column: 2 / 4;
+}
+
+.faq-lista dt{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    color: #e54;
+}
+
+.faq-lista dt::before /*before é um pseudo elemento q vc consegue atribuir a qualquer tag*/{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb5;
+}
+
+.faq-lista dd {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: .5rem;
+    margin-left: 30px;
+}
+
+.mapa {
+    grid-column: 2;
+}
+
+.dados {
+
+}
