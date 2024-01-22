@@ -73,7 +73,7 @@ body{
     content: ''; /*para obter o resultlado precisa colocar o content mesmo que vazio*/
     display: inline-block;
     width: 40px;
-    height: 19px;
+    height: 10px;
     margin-right: 10px;
     background: #fb5;
 }
@@ -82,13 +82,34 @@ body{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1em;
+    letter-spacing: .1em;
     margin-bottom: 1rem;
     color: #e54;
 }
 
-.animais-lista p {
+.animais p {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
+
+.animais-lista {
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.animais-lista::-webkit-scrollbar {
+    width: 18px;
+}
+.animais-lista::-webkit-scrollbar-thumb {/*thumb é aquilo q vc clica pra rolar pra cima ou pra baixo*/
+    background: #fb5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;
+}
+.animais-lista::-webkit-scrollbar-track { /*track é o fundo da barra de scroll*/
+    background: #fb5;
+    border-left: 4px solid #faf6ed;
+    border-right: 4px solid #faf6ed;
+}
+
