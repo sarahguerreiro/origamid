@@ -1,0 +1,37 @@
+/*//selecionando pelo id:
+
+const animaisSection = document.getElementById('animais')
+
+console.log(animais.innerText)
+
+const contatoSection = document.getElementById('contato')
+
+// retorna null caso nao exista:
+
+const naoExiste = document.getElementById('teste')
+
+// seleciona pela class, retorna um HTMLCollection:
+
+const gridSection = document.getElementsByClassName('grid-section')
+
+const contato = document.getElementsByClassName('grid-section contato')// pode passar mais de uma classe, mas ele so vai retornar o elemento q tiver as duas classes juntas
+
+// seleciona todas as ul, retorna um HTMLCollection:
+
+const ul = document.getElementsByTagName('ul')
+
+// retorna o 1o elemento:
+
+console.log(gridSection[0])
+
+// com o querySelector, vc recebe o 1o elemento q combinar com o seu seletor css:
+
+const animais = document.querySelector('.animais')// pra puxar classes use o .
+const contato = document.querySelector('#contato')// pra selecionar id, use o #, sempre entre aspas e entre parenteses
+const ultimoItem = document.querySelector('.animais-lista li:last-child') // tbm é possivel passar a class q vc quer selecionar e depois ser mais especifico com o q vc quer dessa classe, no caso o last-child das li desta class
+const linkCss = document.querySelector('[href^="https://"]') //esse tipo de seletor especial é pra quando vc quer selecionar todo item que tiver href e que começar com (^) entao passe aquilo q vc quer buscar, nesse caso o link
+const primeiroUl = document.querySelector('ul')// tbm é possivel passando diretmente a tag a ser selecionada entre aspas
+
+// busca dentro do ul apenas:
+
+const navItem = primeiroUl.querySelector('li') // aqui vc ta pegando o 1o ul q ele ver e pegando algo mais especifico dentro dele, no caso uma li */
