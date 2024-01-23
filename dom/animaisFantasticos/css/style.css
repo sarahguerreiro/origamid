@@ -185,14 +185,17 @@ body{
 
 @media (max-width: 700px) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;/*a solucao para este caso sera reduzir todas as colunas do grid a apenas 1*/
     }
     .menu, .grid-section, .copy {
-        grid-column: 1;
+        grid-column: 1;/*vale a pena setar pra o codigo nao tentar forcar a divisao padrao de fora do media querie*/
     }
     .grid-section {
         grid-template-columns: 100px 1fr;
         grid-gap: 10px;
+    }
+    .contato {
+        padding-left: 0;
     }
     .animais-lista {
         grid-column: 1;
