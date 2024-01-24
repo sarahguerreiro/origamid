@@ -1,0 +1,22 @@
+// forEach()
+
+Constantemente vamos selecionar uma lista de itens do dom. A melhor forma pra interagirmos com os mesmos é utilizando o método forEach.
+
+const imgs = document.querySelectorAll('img')
+imgs.forEach(function(item){
+    console.log(item)
+})
+
+// Parametros do forEach()
+
+O primeiro parametro é o callback, ou seja, a função que será ativada a cada item. Essa função pode receber 3 parametros: valorAtual, index, array:
+
+const imgs = document.querySelectorAll('img')
+
+imgs.forEach(function(valorAtual, index, array){
+    
+    console.log(item) // o item atual no loop
+    console.log(index) // o numero do index
+    console.log(array) // o array completo
+
+})
